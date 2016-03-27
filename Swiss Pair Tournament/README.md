@@ -54,9 +54,9 @@ Instructions are for a OSX environment and may vary with different operating sys
 
 [![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 
-[swiss] https://en.wikipedia.org/wiki/Swiss-system_tournament
-[nano] https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004
+[swiss]: https://en.wikipedia.org/wiki/Swiss-system_tournament
+[nano]: https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004
 [python]: https://www.python.org/download/releases/2.7/
 [git-clone]: https://help.github.com/articles/cloning-a-repository/
-[vagrant] https://www.vagrantup.com/
-[postgresql] http://www.postgresql.org/download
+[vagrant]: https://www.vagrantup.com/
+[postgresql]: http://www.postgresql.org/download
