@@ -10,9 +10,7 @@ CREATE DATABASE tournament;
 CREATE TABLE players
 (
     id   SERIAL PRIMARY KEY,
-    name   VARCHAR(50),
-    wins   INT,
-    matches   INT
+    name   VARCHAR(50)
 );
 
 -- Create table for Matches
@@ -23,8 +21,11 @@ CREATE TABLE matches
     loser   INT
 );
 
--- View winners
-CREATE VIEW winners AS
-    SELECT players.name, players.wins
-    FROM players
-    ORDER BY players.wins DESC, players.matches ASC;
+-- Create View standings_list
+CREATE VIEW standings_list as
+SELECT players.id, players.name, count(matches.winner) as wins,
+(select count(*) from matches where players.id = matches.winner or players.id = matches.loser) as matches
+from players left join matches
+on players.id=matches.winner
+group by players.id
+order by wins DESC;

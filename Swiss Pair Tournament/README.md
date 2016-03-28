@@ -19,13 +19,14 @@ repository, check out this [help page][git-clone] from GitHub.
 
 To clone open the working directory location and enter:
 ```
-    $ git clone https://github.com/rbillings/udacity-nanodegree/Swiss-Pair-Tournament.git
+    $ git clone https://github.com/rbillings/udacity-nanodegree.git
 ```
 Alternately you can download a .zip file here:
 ```
-    https://github.com/rbillings/XXXXXXXXXXXXXXXXXXXXXXXXXX
+    https://github.com/rbillings/udacity-nanodegree/archive/master.zip
 ```
-This will give you access to all of the required files and functionality for this project.
+This will give you access to all of the required files and functionality for this project inside
+the Swiss Pairs Tournament folder.
 
 
 ## Set up
@@ -36,7 +37,7 @@ This will give you access to all of the required files and functionality for thi
 4. Use a python interpreter to run the functions in tournament.py
 5. Use a terminal to run the code in test_tournament.py by typing:
 ```
-    $ python entertainment_center.py
+    $ python test_tournament.py
 ```
 
 Instructions are for a OSX environment and may vary with different operating systems.
@@ -49,6 +50,8 @@ Instructions are for a OSX environment and may vary with different operating sys
     * http://www.w3schools.com/sql/sql_func_count.asp
     * http://stackoverflow.com/questions/9293900/how-to-increment-integer-columns-value-by-1-in-sql
     * http://stackoverflow.com/questions/4501636/creating-sublists
+    * http://www.tutorialspoint.com/sql/sql-using-views.htm
+    * https://docs.python.org/2/library/functions.html#xrange
 
 * License
 
