@@ -4,7 +4,10 @@ This repository contains code for the Udacity Fullstack Web Developer Nanodegree
 The project contains elements of Flask, Vagrant, HTML, CSS, and more. The goal was to have a fully functioning app that utilizes
 OAuth, and CRUD functionality.
 
-his project fulfills the Item Catalog assignment of the Udacity's [Full-Stack Web Developer Nanodegree.][nano]
+This project contains a list of different plant families, which include a description, image and which hemisphere they live in. Users are able to explore
+the families and see a sample of plants belonging to them. Users can authenticate using Google+ or Facebook to create their own Plant Families and Plants.
+
+This project fulfills the Item Catalog assignment of the Udacity's [Full-Stack Web Developer Nanodegree.][nano]
 
 ## Requirements
 You'll need a version of each of these installed:
