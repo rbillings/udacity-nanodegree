@@ -1,0 +1,45 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+	<div class="row top-menu">
+		<div class="col-md-10"></div>
+		<div class="col-md-2 text-right"></div>
+	</div>
+
+	<div class="row banner main">
+		<div class="col-md-1"></div>
+		<div class="col-md-11 padding-none text-right">
+			<h1>Plant Families</h1>
+		</div>
+	</div>
+
+<div class = 'flash'>
+	{% with messages = get_flashed_messages() %}
+		{% if messages %}
+		<ul>
+			{% for message in messages %}
+			<li> <strong> {{ message }} </strong> </li>
+		{% endfor %}
+		</ul>
+		{% endif %}
+	{% endwith %}
+</div>
+
+	<div class="row padding-top padding-bottom">
+		<div class="col-md-1"></div>
+			<a href="{{url_for('newFamily')}}">
+				<button class="btn btn-default small" id="new-family" style="float: right;">
+					<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>Add Family
+				</button>
+			</a>
+		</div>
+
+	{% for family in families %}
+	<div class="w3-container plant-list">
+		<a href = "{{url_for('showPlants', family_id = family.id)}}">
+			<h3><img src="{{family.picture}}" style="width:90px;height:90px;" align="left" hspace="20">{{family.name}}</h3>
+			<h4>{{family.description}}</h4>
+			<h4>Hemisphere: {{family.hemisphere}}</h4>
+	</div>
+	{% endfor %}
+{% endblock %}
