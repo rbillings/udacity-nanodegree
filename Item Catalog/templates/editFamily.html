@@ -1,0 +1,48 @@
+{% extends "main.html" %}
+{% block content %}
+{% include "header.html" %}
+
+	<div class="col-md-12"></div>
+	<div class="row banner menu">
+		<div class="col-md-11 col-md-offset-1 padding-none">
+			<h1>Edit {{family.name}}</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-6 col-md-offset-1 padding-top">
+			<form action="#" method = "post">
+				<div class="form-group">
+					<label for="name">Name:</label>
+					<input type ="text" class="form-control" name="name" value="{{family.name }}">
+					<div class="padding-bottom"></div>
+				</div>
+
+				<div class="form-group">
+					<label for="description">Description:</label>
+					<input type ="text" class="form-control" maxlength="100" name="description" value="{{family.description}}">
+					<div class="padding-bottom"></div>
+				</div>
+
+				<div class="form-group">
+					<label for="hemisphere">Hemisphere:</label>
+					<input type ="text" class="form-control" maxlength="100" name="hemisphere" value="{{family.hemisphere}}">
+					<div class="padding-bottom"></div>
+				</div>
+
+				<div class="form-group">
+					<label for="hemisphere">Picture:</label>
+					<input type ="url" class="form-control" maxlength="100" name="picture" value="{{family.picture}}">
+					<div class="padding-bottom"></div>
+				</div>
+				<h4><a href="/upload">Upload an image file here</a></h4>
+
+					<button type="submit" class="btn btn-default" id="submit" type="submit">
+					<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>Save</button>
+					<a href = '{{url_for('showFamilies')}}'></a>
+
+					<a href = "{{url_for('showFamilies')}}"> Cancel</a>
+				</div>
+			</form>
+		</div>
+{% endblock %}
